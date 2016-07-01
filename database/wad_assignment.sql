@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 27, 2016 at 03:31 AM
+-- Generation Time: Jul 01, 2016 at 05:00 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.21
 
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `questions` (
-  `question_id` varchar(12) NOT NULL AUTO_INCREMENT,
+  `question_id` varchar(12) NOT NULL,
   `question` varchar(1024) NOT NULL,
   `answer_01` varchar(255) NOT NULL,
   `answer_02` varchar(255) NOT NULL,
@@ -66,6 +66,21 @@ INSERT INTO `quiz` (`quiz_id`, `quiz_name`) VALUES
 ('qu002', 'ddsdsd'),
 ('quiz001', 'Software Development Process Models'),
 ('quiz002', 'Requirement Analysis & Specification');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `results`
+--
+
+CREATE TABLE `results` (
+  `Results_id` varchar(11) NOT NULL,
+  `User_Name` int(11) NOT NULL,
+  `quiz_id` varchar(12) NOT NULL,
+  `marks` int(4) NOT NULL,
+  `percentage_mark` int(4) NOT NULL,
+  `grade` varchar(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -111,10 +126,26 @@ ALTER TABLE `quiz`
   ADD PRIMARY KEY (`quiz_id`);
 
 --
+-- Indexes for table `results`
+--
+ALTER TABLE `results`
+  ADD PRIMARY KEY (`Results_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_name`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `results`
+--
+ALTER TABLE `results`
+  ADD CONSTRAINT `results_ibfk_1` FOREIGN KEY (`Results_id`) REFERENCES `quiz` (`quiz_id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
