@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;		
+}
+
+[class*="col-"] {		
+    float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+
+
+/* | BACKGROUN STYLES| */
+
+.col-b-1 {
+		width: 100%;
+		padding: 30px 75px 15px 75px;
+	    background-color: #f9f9f9;
+	}
+
+
+.col-b-2 {
+		width: 100%;
+		padding: 30px 300px 15px 300px;
+	    background-color: #f9f9f9;
+	}
+
+.col-b-h {
+		width: 100%;
+		padding: 5px 0px 5px 0px;
+	    background-color: #0000cc;
+	}
+
+
+
+
+
+/* | CONTENT STYLES | */
+
+.col-c-1 {
+		width: 100%;
+		padding: 30px 50px 20px 50px;
+	    background-color: #f9f9f9;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    text-align: justify;
+	}
+
+.col-c-2 {
+		width: 50%;
+		height: 400px;
+		padding: 30px 03px 20px 50px;
+	    background-color: #f9f9f9;
+	    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+	    
+	}
+
+.col-c-3 {
+		width: 100%;
+		color: #0000cc;
+		height: 300px;
+		padding: 10px 0px 10px 130px;
+	    background-color: #f9f9f9;
+	    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+	    
+	}
+
+
+.col-c-3-l {
+		width: 100%;
+		color: #0000cc;
+		height: 300px;
+		padding: 10px 0px 10px 130px;
+	    background-color: #f9f9f9;
+	    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+	    
+	}
+
+.col-c-4 {
+		width: 25%;
+		padding: 30px 03px 20px 50px;
+	    background-color: #f9f9f9;
+	   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/ 
+	}
+
+.col-c-5 {
+		width: 75%;
+		padding: 30px 03px 20px 50px;
+	    background-color: #f9f9f9;
+	    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+	}
+
+
+
+.col-c-h {
+		width: 100%;
+		padding: 0px 0px 0px 0px;
+	    background-color: #f9f9f9;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    text-align: center;
+	}
+
+.col-c-n {
+		width: 100%;
+		padding: 0px 20px 0px 0px;
+	    background-color: #f9f9f9;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    text-align: center;
+	}
+
+.cont {
+		text-align: center;
+		color: #0000cc;
+		
+	}
+
+	/* change row colors */
+
+.oddrowcolor {
+	background-color: #537ca8;
+}
+
+.evenrowcolor {
+	background-color: #e5eff9;
+}

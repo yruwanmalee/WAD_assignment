@@ -1,0 +1,46 @@
+
+/* |STRIP THE UL OF PADDING AND LIST STYLING| */
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
+/* |CREATE A HORIZONTAL LIST WITH SPACING| */
+li {
+	display:inline-block;
+	float: right;
+	margin-right: 1px;
+}
+
+/* |STYLE FOR MENU LINKS| */
+li a {
+	display:block;
+	min-width:100px;
+	height: 40px;
+	padding: 10px 10px 20px 10px;
+	background-color: #f9f9f9;
+	text-align: center;
+	color: #0000cc;
+	text-decoration: none;
+	font-family: Vardena,"Times New Roman", Arial, sans-serif;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+/* |HOVER STATE FOR TOP LEVEL LINKS| */
+li:hover a {
+	background: #FFD700;
+}
+
+
+li a:hover:not(.active) {background-color: #0033ff; color: #ffffff;} 
+li a.active {
+	background-color: #00cc00; 
+	color: #ffffff;
+	border-left: 2px solid #009700;
+	border-right: 4px solid #00ff00;
+	border-top: 1px solid #00FF00;
+	border-bottom: 2px solid #009900;
+}
+
