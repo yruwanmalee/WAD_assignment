@@ -10,10 +10,10 @@
 		<h2>Software Engineering On-line Assignments</h2>
 
 		<p>
-		 Here you can test your knowledge on software engineering <br/>
+		 Here you can test your knowledge on software engineering! <br/>
 		 Please <b>login</b> to continue <br/>
 		 or<br/>
-		 <b>sing up</b> to get you membership<br/>
+		 <b>Sign up</b> to get you membership<br/>
 		</p>
 
 		<h3> Good Luck !!!</h3>
