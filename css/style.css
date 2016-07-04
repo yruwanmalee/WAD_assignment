@@ -133,3 +133,7 @@
 .questions{
 	text-align: left;
 }
+
+.question-table tr:nth-child(even) {
+    background-color: #b0bbe4;
+}
