@@ -45,7 +45,7 @@
 		padding: 30px 50px 20px 50px;
 	    background-color: #f9f9f9;
 	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	    text-align: justify;
+	    text-align: center;
 	}
 
 .col-c-2 {
@@ -126,7 +126,8 @@
 	background-color: #e5eff9;
 }
 .question-table{
-	text-align: left;
+	margin-left: 5%;
+    text-align: left;
 }
 
 .questions{

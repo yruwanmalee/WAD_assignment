@@ -30,6 +30,8 @@ li a {
 
 .retry{
 	text-decoration: none;
+	position: relative;
+	left: 46%;
 }
 /* |HOVER STATE FOR TOP LEVEL LINKS| */
 li:hover a {

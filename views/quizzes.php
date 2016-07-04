@@ -27,10 +27,10 @@
 			
 			<div class="col-c-5">
 					<h2>Check your Knowledge</h2>
-					<h3> #name of the quiz</h3>
+					<h3> SOFTWARE ENGINEERING QUIZ</h3>
 					<form method="post" action="review.php">
 					<?php
-					$res = mysqli_query($connect, "select * from questions ORDER BY RAND() limit 5") or die(mysql_error());
+					$res = mysqli_query($connect, "select * from questions ORDER BY RAND() limit 10") or die(mysql_error());
 					$rows = mysqli_num_rows($res);
 					$i=1;
                          while($result=mysqli_fetch_array($res)){?>
@@ -69,7 +69,7 @@
                                <tr>
                                  <td>
 
-                                   <input type="radio" checked='checked' style='display:none' value="5" id='radio1_<?php echo $result['question_id'];?>' name='<?php echo $result['question_id'];?>'/>
+                                   <input type="radio" checked='checked' style='display:none' id='radio1_<?php echo $result['question_id'];?>' name='<?php echo $result['question_id'];?>'/>
 
                                  </td>
 
@@ -79,7 +79,7 @@
                              </div>
                   <?php $i++;} ?>
 					
-					<input type="submit" name="finish" value="Finish & Submit">
+					<input type="submit">
 					</form>
 			</div>
 	</div>
