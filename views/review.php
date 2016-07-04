@@ -8,7 +8,7 @@
 				<h2>Your Marks</h2>
 					
 
-					<input type="submit" name="retry" value="Try again">
+					<a class="retry" href="quizzes.php"><input type="submit" name="retry" value="Try again"></a>
 					<input type="submit" name="cont" value="Continue">
 			</div>
 
